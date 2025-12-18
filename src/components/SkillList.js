@@ -3,7 +3,7 @@ import React, { useState, useCallback } from 'react';
 // SkillList Component
 const SkillList = ({ skills, onDeleteSkill }) => {
   return (
-    <ul style={{ listStyle: 'none', padding: 0 }}>
+    <ul id="skill-list" style={{ listStyle: 'none', padding: 0 }}>
       {skills.map((skill, idx) => (
         <li
           key={idx}
@@ -20,7 +20,7 @@ const SkillList = ({ skills, onDeleteSkill }) => {
             marginRight: '10px'
           }}
         >
-          {skill} ✕
+          {skill}
         </li>
       ))}
     </ul>
